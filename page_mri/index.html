@@ -3,107 +3,184 @@
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="MICCAI 2025 Computational Mathematics Modeling in Cancer Analysis Workshop">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>2025 CMMCA Workshop</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gene Research - INPN Group</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" rel="stylesheet">
+
+    <style>
+        /* 针对论文列表的特定样式，仅在此页面生效 */
+        .paper-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .paper-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 35px;
+            gap: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .paper-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .paper-preview-img {
+            width: 180px; 
+            height: 120px; 
+            object-fit: cover; 
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .paper-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .paper-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary-blue, #003B5C);
+            margin-bottom: 8px;
+            display: block;
+            line-height: 1.4;
+        }
+
+        .paper-author {
+            font-style: italic;
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .paper-desc {
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+            display: block;
+        }
+
+        .paper-links a {
+            color: var(--accent-blue, #52739e);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .paper-links a:hover {
+            text-decoration: underline;
+            color: #b2132e;
+        }
+
+        @media (max-width: 768px) {
+            .paper-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .paper-preview-img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner" style="width: 100%;margin-top: 0px;">
-        <div class="top-left">
-            <span class="title1">CMMCA</span><span class="title2">Workshop</span> <img src="assets/miccai2025.png" style="width: 20%;margin-top: -40px;">
-        </div>
-        <div class="bottom-right">
-            SEP 27<sup>th</sup>, 2025
-            <br>
-            Computational Mathematics Modeling in Cancer Analysis
+        <div class="page-container">
+            <h1>INPN Group</h1>
+            <p>Intelligent Neuroimaging for Precision Neuroscience</p>
         </div>
     </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" title="Workshop Home Page" href="index.html">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="MRI" href="page_mri/index.html">MRI </a> 
-            </td>
-            <td class="navigation">
-                <a title="Tissue" href="page_tissue/index.html">Tissue </a>
-            </td>
-            <td class="navigation">
-                <a title="Gene" href="page_gene/index.html">Gene </a>
-            </td>
-            <td class="navigation">
-                <a title="Demo" href="page_demo/index.html">Other </a>
-            </td>
-        </tr>
-    </table>
+    <div class="navigation-wrap">
+        <div class="page-container">
+            <table class="navigation">
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a title="MRI" href="page_mri/index.html">MRI </a></td>
+                    <td><a title="Tissue" href="page_tissue/index.html">Tissue </a></td>
+                    <td><a title="Gene" href="page_gene/index.html">Gene </a></td>
+                    <td><a class="current" title="Demo" href="page_demo/index.html">Others </a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-    <h2>Keynote Speakers</h2> 
-    <table class="speaker">
-        <tr>
-            <td class="abstract">
-<!--                 <a href="http://www.warwick.ac.uk/nmrajpoot"> -->
-                    <img src="assets/NTY.png">
-                </a>
-                <br>Dr. Tianye Niu
-                <br>Professor
-                <br>University of Science and Technology of China, China
-                <h4>
-                    TOPIC
-                </h4>
-                <p>
+    <div class="page-container">
+        
+        <section id="Published">
+            <h2>Published Works</h2>
+            <ul class="paper-list">
+                <li class="paper-item">
+                    <img src="doc/mri/P/paper1.png" alt="Preview" class="paper-preview-img">
+                    <div class="paper-content">
+                        <span class="paper-title">A Lightweight Optimization Framework for Estimating 3D Brain Tumor Infiltration</span>
+                        <span class="paper-author">Jonas Weidner</span>
+                        <p class="paper-desc">This work introduces a novel lightweight optimization framework specifically designed for high-resolution 3D brain tumor imaging. It significantly reduces computational overhead while maintaining high accuracy.</p>
+                        <div class="paper-links">
+                            <a href="assets/poster/oral/01/01_poster.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/CMMCA-Workshop/example1" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
 
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- <a href="http://www.warwick.ac.uk/nmrajpoot"> -->
-                    <img src="assets/WSD.png">
-                </a>
-                <br>Dr. Shandong Wu
-                <br>Professor
-                <br>Radiology, Biomedical Informatics, Bioengineering, and Intelligent Systems
-                <br>University of Pittsburgh
-                <h4>
-                    Computational Modeling of Breast Cancer Images: From Heuristics to Biology   
-                </h4>
-                <p>
+                <li class="paper-item">
+                    <img src="doc/mri/p/paper1.png" alt="Preview" class="paper-preview-img">
+                    <div class="paper-content">
+                        <span class="paper-title">Advanced Digital Twin Model for SBRT Response Analysis</span>
+                        <span class="paper-author">Valentin Septiers</span>
+                        <p class="paper-desc">A data-driven approach to optimise parameters of a computational digital twin model in response to SBRT on MR-Linac systems.</p>
+                        <div class="paper-links">
+                            <a href="assets/poster/oral/02/02_poster.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/CMMCA-Workshop/example1" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- <a href="http://www.warwick.ac.uk/nmrajpoot"> -->
-                    <img src="assets/CJ.png">
-                </a>
-                <br>Dr. Jing Cai
-                <br>Professor
-                <br>Department of Health Technology and Informatics
-                <br>Hong Kong Polytechnic University
-                <h4>
-                    Towards Generalizable Multi-omics Modeling for Radiation Therapy
-                </h4>
-                <p>
-
-                </p>
-            </td>
-        </tr>
-    </table>
+        <section id="UR">
+            <h2>Under Review</h2>
+            <ul class="paper-list">
+                <li class="paper-item">
+                    <img src="doc/mri/ur/paper1.png" alt="Preview" class="paper-preview-img">
+                    <div class="paper-content">
+                        <span class="paper-title">FMIC-AI: Annotation-Free Tumor Cell Detection in Fluorescence Microscopy</span>
+                        <span class="paper-author">Yinglan Kuang</span>
+                        <p class="paper-desc">A self-supervised learning approach for detecting tumor cells leveraging anomaly detection techniques in fluorescence microscopy.</p>
+                        <div class="paper-links">
+                            <a href="assets/poster/poster/03/03_poster.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/CMMCA-Workshop/example2" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+    </div>
 
     <footer>
-        &copy; Conference Organizers
-        <!-- &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a> -->
+        <div class="page-container">
+            &copy; 2025 Intelligent Neuroimaging for Precision Neuroscience | University of Cambridge
+        </div>
     </footer>
+
 </body>
 </html>
-
