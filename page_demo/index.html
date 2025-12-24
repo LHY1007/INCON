@@ -2,16 +2,16 @@
 <html lang='en'>
 
 <head>
-    <base href=".">
+    <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work - INPN Group / CMMCA 2025</title>
+    <title>Gene Research - INPN Group</title>
     
     <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" rel="stylesheet">
 
     <style>
-        /* 针对论文列表的特定样式优化，确保与新版 main.css 兼容 */
+        /* 针对论文列表的特定样式，仅在此页面生效 */
         .paper-list {
             list-style: none;
             padding: 0;
@@ -21,7 +21,7 @@
         .paper-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 35px; /* 论文条目间的间距 */
+            margin-bottom: 35px;
             gap: 25px;
             padding-bottom: 25px;
             border-bottom: 1px solid #f0f0f0;
@@ -33,7 +33,7 @@
         }
 
         .paper-preview-img {
-            width: 180px; /* 略微放大预览图以匹配新版大气风格 */
+            width: 180px; 
             height: 120px; 
             object-fit: cover; 
             border: 1px solid #ddd;
@@ -44,7 +44,7 @@
 
         .paper-content {
             flex: 1;
-            min-width: 0; /* 核心修复：防止 Flex 子元素在窄屏溢出 */
+            min-width: 0;
         }
 
         .paper-title {
@@ -85,7 +85,6 @@
             color: #b2132e;
         }
 
-        /* 手机端适配：预览图置顶，文字在下 */
         @media (max-width: 768px) {
             .paper-item {
                 flex-direction: column;
@@ -105,8 +104,8 @@
 
     <div class="banner">
         <div class="page-container">
-            <h1>Our Research</h1>
-            <p>Computational Mathematics Modeling in Cancer Analysis</p>
+            <h1>INPN Group</h1>
+            <p>Intelligent Neuroimaging for Precision Neuroscience</p>
         </div>
     </div>
 
@@ -117,8 +116,8 @@
                     <td><a href="index.html">Home</a></td>
                     <td><a title="MRI" href="page_mri/index.html">MRI </a></td>
                     <td><a title="Tissue" href="page_tissue/index.html">Tissue </a></td>
-                    <td><a title="Gene" href="page_gene/index.html">Gene </a></td>
-                    <td><a title="Demo" href="page_demo/index.html">Other </a></td>
+                    <td><a class="current" title="Gene" href="page_gene/index.html">Gene </a></td>
+                    <td><a title="Demo" href="page_demo/index.html">Others </a></td>
                 </tr>
             </table>
         </div>
