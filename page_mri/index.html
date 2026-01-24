@@ -85,12 +85,6 @@
             color: #b2132e;
         }
 
-        /*自己加了一段*/
-        .paper-journal-muted {
-            color: #999;
-            font-style: italic;
-        }
-
         @media (max-width: 768px) {
             .paper-item {
                 flex-direction: column;
@@ -120,9 +114,9 @@
             <table class="navigation">
                 <tr>
                     <td><a href="index.html">Home</a></td>
-                    <td><a class="current" title="MRI" href="page_mri/index.html">Neuroimaging </a></td>
-                    <td><a title="Tissue" href="page_tissue/index.html">Tissue Imaging </a></td>
-                    <td><a title="Gene" href="page_gene/index.html">Imaging Genetics </a></td>
+                    <td><a title="MRI" href="page_mri/index.html">Neuroimaging </a></td>
+                    <td><a title="Tissue" href="page_tissue/index.html">Tissue Imaging</a></td>
+                    <td><a class="current" title="Gene" href="page_gene/index.html">Imaging Genetics </a></td>
                     <td><a title="Demo" href="page_demo/index.html">Clinical Translation </a></td>
                 </tr>
             </table>
@@ -131,207 +125,43 @@
 
     <div class="page-container">
         
-        <section id="Published">
+        <section id="Published"><!--PublishedPublishedPublishedPublishedPublishedPublishedPublishedPublishedPublishedPublishedPublishedPublishedPublishedPublished-->
             <h2>Published Works</h2>
             <ul class="paper-list"></ul>
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/GLNO.png" alt="Preview" class="paper-preview-img">
+                <li class="paper-item">
+                    <img src="doc/gene/p/Knowledge-driven Subspace Fusion and.png" alt="Preview" class="paper-preview-img">
+                    <div class="paper-content">
+                        <span class="paper-title">Knowledge-Driven Subspace Fusion and Gradient Coordination for Multi-modal Learning</span>
+                        <span class="paper-journal">Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2023)</span>
+                        <span class="paper-author">Yupei Zhang, Xiaofei Wang, Fangliangzi Meng, Jin Tang, and Chao Li*</span>
+                        <p class="paper-desc">A knowledge-driven multi-modal framework is proposed that models tumour and TME gene subspaces and improves glioma diagnosis, grading, and survival prediction through cross-modal deformable attention and gradient coordination.</p>
+                        <div class="paper-links">
+                            <a href="doc/page_tissue/p/paper01.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/helenypzhang/Subspace-Multimodal-Learning" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="paper-item">
+                    <img src="doc/gene/p/Genomics-Guided Representation Learning for Pathologic Pan-Cancer Tumor Microenvironment Subtype Prediction.png" alt="Preview" class="paper-preview-img">
                     
-                    <div class="paper-content"><!--tanghao的GLNO-->
-                        <span class="paper-title">Geometric Laplace Neural Operator</span>
-                        <span class="paper-journal">arXiv</span>
-                        <span class="paper-author">Hao Tang, Jiongyu Zhu, Zimeng Feng, Hao Li, Chao Li</span>
+                    <div class="paper-content">
+                        <span class="paper-title">Genomics-Guided Representation Learning for Pathologic Pan-Cancer Tumor Microenvironment Subtype Prediction</span>
+                        <span class="paper-journal">MICCAI 2024</span>
+                        <span class="paper-author">Fangliangzi Meng, Hongrun Zhang, Ruodan Yan, Guohui Chuai, Chao Li & Qi Liu</span>
                         
-                        <p class="paper-desc">
-                            The proposed framework takes functions defined on arbitrary geometries as input and learns a resolution-invariant operator mapping. 
-                            It first models aperiodic and decaying dynamics using a Laplace-domain pole–residue representation with exponential bases, 
-                            then embeds this representation into the Laplace–Beltrami eigenbasis to handle non-Euclidean domains. 
-                            A grid-invariant neural architecture (GLNONet) is designed to realize this operator in practice, enabling robust operator learning across PDEs, ODEs, 
-                            and real-world datasets.
-                        </p>
+                        <p class="paper-desc">.</p>
                         
                         <div class="paper-links">
-                            <a href="doc/mri/p/tanghao_GLNO.pdf" target="_blank">Paper</a> |
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-72384-1_20" target="_blank">Paper</a> |
                             <a href="https://github.com/..." target="_blank">Code</a>
                         </div>
                     </div>
-                </li><!--结束-->
+                </li>
 
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/jianwei_image.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--建玮的-->
-                        <span class="paper-title">Multiscale Causal Geometric Deep Learning for Modeling Brain Structure</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Chengzhi Xia* Jianwei Chen* Yixuan Jiang Qi Yan Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            Devised a geometric deep learning model to introduce Laplacian harmonics and spectral graph theory to optimize multimodal alignment and multiscale integration.
-                            Graph Variational Autoencoder architectures is used in disentangled learning to distinguish shared features from latent space and scale-specific features
-                            Modelling eigenvectors from different modalities data in the Laplacian spectral domain with multiscale interpretation
-                            causal and non-causal factors are distinguished by a mutual information-informed bilevel regularizer
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/jianwei_archive.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                    </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/FOD-Diff.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--tanghao的FOD-Diff-->
-                        <span class="paper-title">Multiscale Causal Geometric Deep Learning for Modeling Brain Structure</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Hao Tang, Hanyu Liu, Alessandro Perelli, Xi Chen, Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            We propose a 3D multi-channel patch-based diffusion model for predicting HAR-FOD from LAR-FOD, incorporating anatomy-aware patch adaptation, voxel-level conditional coordination, 
-                            and harmonic-domain attention to model complex SH coefficient dependencies, achieving state-of-the-art reconstruction performance.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/tanghaoFOD-Diff.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                    </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/GSNO.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--tanghao的GSNO-->
-                        <span class="paper-title">Multiscale Causal Geometric Deep Learning for Modeling Brain Structure</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Hao Tang,   Hao Chen,   Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            This work introduces a principled spherical operator-learning framework based on designable Green’s functions and harmonic expansion. 
-                            By incorporating absolute and relative position-dependent Green’s functions, the proposed GSNO flexibly balances rotational equivariance and invariance, 
-                            enabling effective modeling of anisotropic and constraint-rich systems on the sphere. A hierarchical spectral architecture, GSHNet, 
-                            further enhances multi-scale global representation, resulting in consistent performance gains across diverse spherical learning tasks.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/唐浩GSNO.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/CoLa-Diff overview.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--CoLa-Diff-->
-                        <span class="paper-title">CoLa-Diff: Conditional Latent Diffusion Model for Multi-Modal MRI Synthesis</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Lan Jiang, Ye Mao, Xi Chen, Xiangfeng Wang, and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            CoLa-Diff is a diffusion-based multi-modal MRI synthesis framework that operates in latent space to reduce memory consumption while enabling effective multi-condition modeling.
-                            By incorporating cooperative latent filtering, anatomical priors via brain region masks, and adaptive weighting of multi-modal inputs, 
-                            CoLa-Diff achieves structure-preserving and high-quality MRI synthesis, outperforming existing state-of-the-art methods.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/CoLa-Diff.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/DisC-Diff.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--DisC-Diff-->
-                        <span class="paper-title">DisC-Diff: Disentangled Conditional Diffusion Model for Multi-Contrast MRI Super-Resolution</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Ye Mao, Lan Jiang, Xi Chen, and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            DisC-Diff takes low-resolution, multi-contrast brain MRI images as input and employs a conditional diffusion model to generate high-resolution reconstructions while estimating restoration uncertainty. 
-                            Within this framework, a multi-stream disentangled network processes different contrasts separately to fully leverage complementary information, 
-                            enhancing both reconstruction accuracy and model interpretability. The output is high-resolution, 
-                            multi-contrast MRI images along with uncertainty estimates, demonstrating superior quantitative and visual performance compared to existing methods.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/DisC-Diff.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/D-CoRP.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--D-CoRP-->
-                        <span class="paper-title">D-CoRP: Differentiable Connectivity Refinement for Functional Brain Networks</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Haoyu Hu, Hongrun Zhang, and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            We proposed D-CoRP, a lightweight, plug-in module for refining noisy fMRI-derived functional connectomes so that downstream GNNs learn from more informative graph. 
-                            First we generate selection probabilities for each connection by using an auxiliary attention-based module to score how likely an edge is to be kept. 
-                            Then we propose differentiable sampling to turn those probabilities into a near-binary masking matrix, so the model can actually “select” edges while still allowing gradients to flow. 
-                            Finally, we optimise the mask with an information-bottleneck objective, 
-                            encouraging the refined graph to retain task-relevant connectivity but compress away redundant or noisy links.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/D-CoRP.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/Phy-Diff.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--Phy-Diff-->
-                        <span class="paper-title">Phy-Diff: Physics-guided Hourglass Diffusion Model for Diffusion MRI Synthesis</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Juanhua Zhang , Ruodan Yan , Alessandro Perelli, Xi Chen , and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            We proposed Phy-Diff, a physics-guided conditional diffusion model for synthesising DWI from b0 under specified b-value/b-vector conditions, 
-                            aiming to reduce acquisition while keeping tract-level detail. 
-                            We use a physics-guided noise evolution (ADC-informed) to make the forward noising follow diffusion signal attenuation rather than generic Gaussian corruption. 
-                            Then we apply query-based conditional mapping to encode continuous b-value and direction so the reverse process can generate DWI for arbitrary q-space settings. 
-                            Finally, the designed XTRACT condition adaptation injects tract priors via an adaptor branch to preserve white-matter bundle structure and reduce over-smoothing.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/Phy-Diff.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-            </ul>
-        </section>
-
-        <section id="UR">
-            <h2>Under Review / Preprint</h2>
-            <ul class="paper-list">
+            <!--
                 <li class="paper-item">
-                    <img src="doc/[子页面关键词]/ur/你的图片名.png" alt="Preview" class="paper-preview-img">
+                    <img src="doc/[子页面关键词]/p/你的图片名.png" alt="Preview" class="paper-preview-img">
                     
                     <div class="paper-content">
                         <span class="paper-title">这里输入你的论文标题</span>
@@ -341,11 +171,104 @@
                         <p class="paper-desc">请简要描述这项工作的核心创新点和贡献（建议 2-3 句话）。</p>
                         
                         <div class="paper-links">
-                            <a href="doc/mri/p/综合实验大作业要求.pdf" target="_blank">Paper</a> |
+                            <a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
                             <a href="https://github.com/..." target="_blank">Code</a>
                         </div>
                     </div>
                 </li>
+            -->
+
+                
+                <li class="paper-item">
+                    <img src="doc/gene/p/Unified Modeling Enhanced Multimodal Learning.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content">
+                        <span class="paper-title">Unified Modeling Enhanced Multimodal Learning for Precision Neuro-Oncology</span>
+                        <span class="paper-journal">Medical Image Computing and Computer Assisted Intervention (MICCAI 2024)</span>
+                        <span class="paper-author">Huahui Yi, Xiaofei Wang, Kang Li, Chao Li</span>
+                        
+                        <p class="paper-desc">This work proposes a unified multimodal framework for neuro-oncology. Enhanced modeling improves precision diagnosis and prognosis. The approach integrates heterogeneous medical data effectively.</p>
+                        
+                        <div class="paper-links">
+                            <a href="doc/gene/p/Unified Modeling Enhanced Multimodal Learning.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/..." target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                
+                <li class="paper-item">
+                    <img src="doc/gene/p/Adaptive Spatial Transcriptomics Interpolation.png" alt="Preview" class="paper-preview-img">
+                    <div class="paper-content">
+                        <span class="paper-title">Adaptive Spatial Transcriptomics Interpolation via Cross-modal Cross-slice Modeling</span>
+                        <span class="paper-journal">International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2025)</span>
+                        <span class="paper-author">Ningfeng Que, Xiaofei Wang, Jingjing Chen, Yixuan Jiang, Chao Li*</span>
+                        <p class="paper-desc">This work addresses spatial transcriptomics interpolation across tissue slices. A cross-modal and cross-slice modeling strategy is proposed. The method enables flexible ST reconstruction with arbitrary slice numbers.</p>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/pdf/2505.10729" target="_blank">Paper</a> |
+                            <a href="https://github.com/XiaofeiWang2018/C2-STi" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="UR"><!--URURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURURUR-->
+            <h2>Under Review / Preprint</h2>
+            <ul class="paper-list">
+                <li class="paper-item"><!--boxing glycemic-->
+                    <img src="doc/gene/p/glycemic.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content">
+                        <span class="paper-title">Genetics-informed bidirectional mapping of glycemic traits and brain phenotypes</span>
+                        <span class="paper-journal">Preprint</span>
+                        <span class="paper-author">Boxing Liu, Yunfan Zhang, Jianwei Chen, and Chao Li</span>
+                        
+                        <p class="paper-desc">In this study, we investigated the directional effect between glycemic traits and brain phenotypes via integrating GWAS of glycemic traits, 
+                            multimodal neuroimaging, and neuropsychiatric disorders within a genetic-informed framework with bidirectional two-sample Mendelian randomization (MR). 
+                            Additionally, eQTL-based, cell- and tissue-resolved annotation localizes these signals to specific biological pathways and brain cells. 
+                            This provided an integrative foundation for understanding how glycemic variation aligns with brain architecture and contributes to the risk of neuropsychiatric disorders,
+                            enabling us to construct a prevention scenario.</p>
+                        
+                        <div class="paper-links">
+                            <a href="https://doi.org/10.64898/2026.01.08.698365" target="_blank">Paper</a> |
+                            <a href="https://github.com/zaqwedcx-lgtm/Glycemic/tree/main" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="paper-item">
+                    <img src="doc/gene/p/Interpretable Multimodal Cancer Prototyping.png" alt="Preview" class="paper-preview-img">
+                    <div class="paper-content">
+                        <span class="paper-title">Interpretable Multimodal Cancer Prototyping with Whole Slide Images and Incompletely Paired Genomics</span>
+                        <span class="paper-journal">IEEE Transactions on Medical Imaging (TMI)</span>
+                        <span class="paper-author">Yupei Zhang, Yating Huang, Wanming Hu, Lequan Yu, Hujun Yin, Chao Li*</span>
+                        <p class="paper-desc">An interpretable multimodal framework is proposed that combines prototype-based modeling, multiview alignment, and bipartite fusion to integrate WSIs with incompletely paired genomics for robust cancer prediction.</p>
+                        <div class="paper-links">
+                            <a href="doc/gene/p/Interpretable Multimodal Cancer Prototyping.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/helenypzhang/Interpretable-Multimodal-Prototyping" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="paper-item"><!--PA analysis-->
+                    <img src="doc/gene/p/PA.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content">
+                        <span class="paper-title">Objectively measured multidimensional behaviour profiles and brain health</span>
+                        <span class="paper-journal">Preprint</span>
+                        
+                        <p class="paper-desc">Utilizing the wristband accelerometer data of approximately 90,000 subjects in the UK Biobank to deeply explore the characteristics of individuals' Physical Activity,
+                            Sleep and Circadian Rhythm. The core objective of the research is to quantify how these daily behavioral characteristics reflect or predict complex brain health phenotypes, 
+                            including neuropsychiatric disorders, cognitive functions, and changes in brain structure. 
+                            83 features were integrated into 17 principal components to distinguish the common variations and independent variations among behaviors through the Joint and Individual Variation Explained (JIVE) method</p>
+                        
+                        <div class="paper-links">
+                            <a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/LHY1007/INCON/tree/main/doc/gene/code/PA" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </li>               
             </ul>
         </section>
         
