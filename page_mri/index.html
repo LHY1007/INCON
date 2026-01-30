@@ -135,6 +135,130 @@
             <h2>Published Works</h2>
             <ul class="paper-list"></ul>
                 <li class="paper-item"><!--开始-->
+                    <img src="doc/mri/p/GSNO.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content"><!--tanghao的GSNO-->
+                        <span class="paper-title">Generalized Spherical Neural Operators: Green's Function Formulation</span>
+                        <span class="paper-journal">The Fourteenth International Conference on Learning Representations (ICLR 2026)</span>
+                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
+                        <span class="paper-author">Hao Tang,   Hao Chen,   Chao Li</span>
+                        
+                        <p class="paper-desc">
+                            This work introduces a principled spherical operator-learning framework based on designable Green’s functions and harmonic expansion. 
+                            By incorporating absolute and relative position-dependent Green’s functions, the proposed GSNO flexibly balances rotational equivariance and invariance, 
+                            enabling effective modeling of anisotropic and constraint-rich systems on the sphere. A hierarchical spectral architecture, GSHNet, 
+                            further enhances multi-scale global representation, resulting in consistent performance gains across diverse spherical learning tasks.
+                        </p>
+                        
+                        <div class="paper-links">
+                            <a href="doc/mri/p/GSNO_arxiv_ICLR.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/haot2025/GSNO.git" target="_blank">Code</a>
+                        </div>
+                     </div>
+                </li><!--结束-->
+
+                <li class="paper-item"><!--开始-->
+                    <img src="doc/mri/p/D-CoRP.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content"><!--D-CoRP-->
+                        <span class="paper-title">D-CoRP: Differentiable Connectivity Refinement for Functional Brain Networks</span>
+                        <span class="paper-journal">Medical Image Computing and Computer Assisted Intervention (MICCAI 2024)</span>
+                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
+                        <span class="paper-author">Haoyu Hu, Hongrun Zhang, and Chao Li</span>
+                        
+                        <p class="paper-desc">
+                            We proposed D-CoRP, a lightweight, plug-in module for refining noisy fMRI-derived functional connectomes so that downstream GNNs learn from more informative graph. 
+                            First we generate selection probabilities for each connection by using an auxiliary attention-based module to score how likely an edge is to be kept. 
+                            Then we propose differentiable sampling to turn those probabilities into a near-binary masking matrix, so the model can actually “select” edges while still allowing gradients to flow. 
+                            Finally, we optimise the mask with an information-bottleneck objective, 
+                            encouraging the refined graph to retain task-relevant connectivity but compress away redundant or noisy links.
+                        </p>
+                        
+                        <div class="paper-links">
+                            <a href="doc/mri/p/D-CoRP.pdf" target="_blank">Paper</a>
+                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/..." target="_blank">Code</a>-->
+                        </div>
+                     </div>
+                </li><!--结束-->
+
+                <li class="paper-item"><!--开始-->
+                    <img src="doc/mri/p/Phy-Diff.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content"><!--Phy-Diff-->
+                        <span class="paper-title">Phy-Diff: Physics-guided Hourglass Diffusion Model for Diffusion MRI Synthesis</span>
+                        <span class="paper-journal">Medical Image Computing and Computer Assisted Intervention (MICCAI 2024)</span>
+                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
+                        <span class="paper-author">Juanhua Zhang , Ruodan Yan , Alessandro Perelli, Xi Chen , and Chao Li</span>
+                        
+                        <p class="paper-desc">
+                            We proposed Phy-Diff, a physics-guided conditional diffusion model for synthesising DWI from b0 under specified b-value/b-vector conditions, 
+                            aiming to reduce acquisition while keeping tract-level detail. 
+                            We use a physics-guided noise evolution (ADC-informed) to make the forward noising follow diffusion signal attenuation rather than generic Gaussian corruption. 
+                            Then we apply query-based conditional mapping to encode continuous b-value and direction so the reverse process can generate DWI for arbitrary q-space settings. 
+                            Finally, the designed XTRACT condition adaptation injects tract priors via an adaptor branch to preserve white-matter bundle structure and reduce over-smoothing.
+                        </p>
+                        
+                        <div class="paper-links">
+                            <a href="doc/mri/p/Phy-Diff.pdf" target="_blank">Paper</a>
+                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/..." target="_blank">Code</a>-->
+                        </div>
+                     </div>
+                </li><!--结束-->
+                <li class="paper-item"><!--开始-->
+                    <img src="doc/mri/p/CoLa-Diff overview.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content"><!--CoLa-Diff-->
+                        <span class="paper-title">CoLa-Diff: Conditional Latent Diffusion Model for Multi-Modal MRI Synthesis</span>
+                        <span class="paper-journal">Medical Image Computing and Computer Assisted Intervention (MICCAI 2023)</span>
+                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
+                        <span class="paper-author">Lan Jiang, Ye Mao, Xi Chen, Xiangfeng Wang, and Chao Li</span>
+                        
+                        <p class="paper-desc">
+                            CoLa-Diff is a diffusion-based multi-modal MRI synthesis framework that operates in latent space to reduce memory consumption while enabling effective multi-condition modeling.
+                            By incorporating cooperative latent filtering, anatomical priors via brain region masks, and adaptive weighting of multi-modal inputs, 
+                            CoLa-Diff achieves structure-preserving and high-quality MRI synthesis, outperforming existing state-of-the-art methods.
+                        </p>
+                        
+                        <div class="paper-links">
+                            <a href="doc/mri/p/CoLa-Diff.pdf" target="_blank">Paper</a>
+                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/..." target="_blank">Code</a>-->
+                        </div>
+                     </div>
+                </li><!--结束-->
+
+                <li class="paper-item"><!--开始-->
+                    <img src="doc/mri/p/DisC-Diff.png" alt="Preview" class="paper-preview-img">
+                    
+                    <div class="paper-content"><!--DisC-Diff-->
+                        <span class="paper-title">DisC-Diff: Disentangled Conditional Diffusion Model for Multi-Contrast MRI Super-Resolution</span>
+                        <span class="paper-journal">Medical Image Computing and Computer Assisted Intervention (MICCAI 2023)</span>
+                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
+                        <span class="paper-author">Ye Mao, Lan Jiang, Xi Chen, and Chao Li</span>
+                        
+                        <p class="paper-desc">
+                            DisC-Diff takes low-resolution, multi-contrast brain MRI images as input and employs a conditional diffusion model to generate high-resolution reconstructions while estimating restoration uncertainty. 
+                            Within this framework, a multi-stream disentangled network processes different contrasts separately to fully leverage complementary information, 
+                            enhancing both reconstruction accuracy and model interpretability. The output is high-resolution, 
+                            multi-contrast MRI images along with uncertainty estimates, demonstrating superior quantitative and visual performance compared to existing methods.
+                        </p>
+                        
+                        <div class="paper-links">
+                            <a href="doc/mri/p/DisC-Diff.pdf" target="_blank">Paper</a>
+                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
+                            <a href="https://github.com/..." target="_blank">Code</a>-->
+                        </div>
+                     </div>
+                </li><!--结束-->
+            </ul>
+        </section>
+
+        <section id="UR">
+            <h2>Under Review / Preprint</h2>
+            <ul class="paper-list">
+                <li class="paper-item"><!--开始-->
                     <img src="doc/mri/p/GLNO.png" alt="Preview" class="paper-preview-img">
                     
                     <div class="paper-content"><!--tanghao的GLNO-->
@@ -202,126 +326,6 @@
                             <a href="https://github.com/..." target="_blank">Code</a>-->
                         </div>
                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/GSNO.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--tanghao的GSNO-->
-                        <span class="paper-title">Generalized Spherical Neural Operators: Green's Function Formulation</span>
-                        <span class="paper-journal">The Fourteenth International Conference on Learning Representations (ICLR 2026)</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Hao Tang,   Hao Chen,   Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            This work introduces a principled spherical operator-learning framework based on designable Green’s functions and harmonic expansion. 
-                            By incorporating absolute and relative position-dependent Green’s functions, the proposed GSNO flexibly balances rotational equivariance and invariance, 
-                            enabling effective modeling of anisotropic and constraint-rich systems on the sphere. A hierarchical spectral architecture, GSHNet, 
-                            further enhances multi-scale global representation, resulting in consistent performance gains across diverse spherical learning tasks.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/GSNO_arxiv_ICLR.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/haot2025/GSNO.git" target="_blank">Code</a>
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/CoLa-Diff overview.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--CoLa-Diff-->
-                        <span class="paper-title">CoLa-Diff: Conditional Latent Diffusion Model for Multi-Modal MRI Synthesis</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Lan Jiang, Ye Mao, Xi Chen, Xiangfeng Wang, and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            CoLa-Diff is a diffusion-based multi-modal MRI synthesis framework that operates in latent space to reduce memory consumption while enabling effective multi-condition modeling.
-                            By incorporating cooperative latent filtering, anatomical priors via brain region masks, and adaptive weighting of multi-modal inputs, 
-                            CoLa-Diff achieves structure-preserving and high-quality MRI synthesis, outperforming existing state-of-the-art methods.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/CoLa-Diff.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/DisC-Diff.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--DisC-Diff-->
-                        <span class="paper-title">DisC-Diff: Disentangled Conditional Diffusion Model for Multi-Contrast MRI Super-Resolution</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Ye Mao, Lan Jiang, Xi Chen, and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            DisC-Diff takes low-resolution, multi-contrast brain MRI images as input and employs a conditional diffusion model to generate high-resolution reconstructions while estimating restoration uncertainty. 
-                            Within this framework, a multi-stream disentangled network processes different contrasts separately to fully leverage complementary information, 
-                            enhancing both reconstruction accuracy and model interpretability. The output is high-resolution, 
-                            multi-contrast MRI images along with uncertainty estimates, demonstrating superior quantitative and visual performance compared to existing methods.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/DisC-Diff.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/D-CoRP.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--D-CoRP-->
-                        <span class="paper-title">D-CoRP: Differentiable Connectivity Refinement for Functional Brain Networks</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Haoyu Hu, Hongrun Zhang, and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            We proposed D-CoRP, a lightweight, plug-in module for refining noisy fMRI-derived functional connectomes so that downstream GNNs learn from more informative graph. 
-                            First we generate selection probabilities for each connection by using an auxiliary attention-based module to score how likely an edge is to be kept. 
-                            Then we propose differentiable sampling to turn those probabilities into a near-binary masking matrix, so the model can actually “select” edges while still allowing gradients to flow. 
-                            Finally, we optimise the mask with an information-bottleneck objective, 
-                            encouraging the refined graph to retain task-relevant connectivity but compress away redundant or noisy links.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/D-CoRP.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
-                </li><!--结束-->
-
-                <li class="paper-item"><!--开始-->
-                    <img src="doc/mri/p/Phy-Diff.png" alt="Preview" class="paper-preview-img">
-                    
-                    <div class="paper-content"><!--Phy-Diff-->
-                        <span class="paper-title">Phy-Diff: Physics-guided Hourglass Diffusion Model for Diffusion MRI Synthesis</span>
-                        <span class="paper-journal">arXiv</span>
-                        <!--<span class="paper-journal">发表/投稿期刊（预印本写Preprint）</span>-->
-                        <span class="paper-author">Juanhua Zhang , Ruodan Yan , Alessandro Perelli, Xi Chen , and Chao Li</span>
-                        
-                        <p class="paper-desc">
-                            We proposed Phy-Diff, a physics-guided conditional diffusion model for synthesising DWI from b0 under specified b-value/b-vector conditions, 
-                            aiming to reduce acquisition while keeping tract-level detail. 
-                            We use a physics-guided noise evolution (ADC-informed) to make the forward noising follow diffusion signal attenuation rather than generic Gaussian corruption. 
-                            Then we apply query-based conditional mapping to encode continuous b-value and direction so the reverse process can generate DWI for arbitrary q-space settings. 
-                            Finally, the designed XTRACT condition adaptation injects tract priors via an adaptor branch to preserve white-matter bundle structure and reduce over-smoothing.
-                        </p>
-                        
-                        <div class="paper-links">
-                            <a href="doc/mri/p/Phy-Diff.pdf" target="_blank">Paper</a>
-                            <!--<a href="doc/[子页面关键词]/p/你的论文.pdf" target="_blank">Paper</a> |
-                            <a href="https://github.com/..." target="_blank">Code</a>-->
-                        </div>
-                     </div>
                 </li><!--结束-->
             </ul>
         </section>
